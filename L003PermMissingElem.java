@@ -5,12 +5,12 @@
  *
  */
 
-public final class PermMissingElem {
+public final class L003PermMissingElem {
   
   /**
    * Private constructor.
    */
-  private PermMissingElem() { }
+  private L003PermMissingElem() { }
   
   /**
    * Main method.

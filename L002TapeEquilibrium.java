@@ -3,7 +3,7 @@
  * @author luisramalho
  *
  */
-public final class TapeEquilibrium {
+public final class L002TapeEquilibrium {
   
   /**
    * Test case(s).
@@ -13,7 +13,7 @@ public final class TapeEquilibrium {
   /**
    * Private constructor.
    */
-  private TapeEquilibrium() {
+  private L002TapeEquilibrium() {
     
   }
 

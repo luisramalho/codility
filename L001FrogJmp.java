@@ -3,12 +3,12 @@
  * @author luisramalho
  *
  */
-public final class FrogJmp {
+public final class L001FrogJmp {
   
   /**
    * Private constructor.
    */
-  private FrogJmp() {
+  private L001FrogJmp() {
     
   }
   
