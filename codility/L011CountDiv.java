@@ -1,3 +1,5 @@
+package codility;
+
 /**
  * Computes the number of integers divisible by k in range [a..b].
  *

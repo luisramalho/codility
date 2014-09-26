@@ -1,3 +1,5 @@
+package codility;
+
 import java.util.Arrays;
 
 /**

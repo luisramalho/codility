@@ -1,11 +1,13 @@
+package codility;
+
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Finds the earliest time when a frog can jump to the other side of a river.
- * 
+ *
  * @author luisramalho
- * 
+ *
  */
 public final class L005FrogRiverOne {
 
@@ -27,7 +29,7 @@ public final class L005FrogRiverOne {
 
     /**
      * Main method.
-     * 
+     *
      * @param args
      *            Arguments.
      */
@@ -39,7 +41,7 @@ public final class L005FrogRiverOne {
      * Earliest time when the frog can jump to the other side of the river. The
      * frog can cross only when leaves appear at every position across the river
      * from 1 to X.
-     * 
+     *
      * @param x
      *            Final position.
      * @param a

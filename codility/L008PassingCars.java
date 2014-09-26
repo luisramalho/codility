@@ -1,6 +1,8 @@
+package codility;
+
 /**
  * Counts the number of passing cars on the road.
- * 
+ *
  * @author luisramalho
  *
  */

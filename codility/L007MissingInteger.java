@@ -1,10 +1,12 @@
+package codility;
+
 import java.util.Arrays;
 
 /**
  * Finds the minimal positive integer not occurring in a given sequence.
- * 
+ *
  * @author luisramalho
- * 
+ *
  */
 public final class L007MissingInteger {
 
@@ -17,7 +19,7 @@ public final class L007MissingInteger {
 
     /**
      * Main method.
-     * 
+     *
      * @param args
      *            Arguments
      */
@@ -28,7 +30,7 @@ public final class L007MissingInteger {
 
     /**
      * Finds the minimal positive integer not occurring in a given sequence.
-     * 
+     *
      * @param a
      *            Non-empty zero-indexed array of N integers
      * @return Minimal positive integer that does not occur in A

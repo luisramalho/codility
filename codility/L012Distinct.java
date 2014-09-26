@@ -1,3 +1,5 @@
+package codility;
+
 /**
  * Computes the number of distinct values in an array.
  *

@@ -1,3 +1,5 @@
+package codility;
+
 /**
  * Determines whether a triangle can be built from a given set of edges.
  *
@@ -46,9 +48,9 @@ public final class L013Triangle {
 
         /*
          * A triplet (P, Q, R) is triangular if 0 ≤ P < Q < R < N and:
-         *
+         * 
          * A[P] + A[Q] > A[R], A[Q] + A[R] > A[P], A[R] + A[P] > A[Q].
-         *
+         * 
          * The conversion to long is done so that it prevents against integer
          * overflow, since Integer.MAX_VALUE is the highest possible value of N.
          */

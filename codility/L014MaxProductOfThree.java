@@ -1,3 +1,4 @@
+package codility;
 
 /**
  * Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
@@ -43,7 +44,7 @@ public final class L014MaxProductOfThree {
         /*
          * The product of triplet (P, Q, R) equates to A[P] * A[Q] * A[R] (0 ≤ P
          * < Q < R < N).
-         *
+         * 
          * The product of two negatives will be a positive, so it's crucial to
          * check if there are two negative with a product that is higher than
          * the second and third to last numbers in the array.

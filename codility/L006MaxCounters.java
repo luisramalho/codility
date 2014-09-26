@@ -1,9 +1,11 @@
+package codility;
+
 /**
  * Calculate the values of counters after applying all alternating operations:
  * increase counter by 1; set value of all counters to current maximum.
- * 
+ *
  * @author luisramalho
- * 
+ *
  */
 public final class L006MaxCounters {
 
@@ -15,7 +17,7 @@ public final class L006MaxCounters {
 
     /**
      * Main method.
-     * 
+     *
      * @param args
      *            Arguments
      */
@@ -34,7 +36,7 @@ public final class L006MaxCounters {
 
     /**
      * Calculate the value of every counter after all operations.
-     * 
+     *
      * @param n
      *            Number of counters.
      * @param a
