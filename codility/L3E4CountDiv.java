@@ -6,12 +6,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L011CountDiv {
+public final class L3E4CountDiv {
 
     /**
      * Private constructor.
      */
-    private L011CountDiv() {
+    private L3E4CountDiv() {
 
     }
 

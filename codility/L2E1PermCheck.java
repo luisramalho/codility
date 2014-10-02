@@ -9,12 +9,12 @@ import java.util.Set;
  * @author luisramalho
  *
  */
-public final class L004PermCheck {
+public final class L2E1PermCheck {
 
     /**
      * Private constructor.
      */
-    private L004PermCheck() {
+    private L2E1PermCheck() {
     }
 
     /**

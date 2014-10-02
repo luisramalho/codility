@@ -1,17 +1,17 @@
 package codility;
 
 /**
- * Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
+ * Computes the number of distinct values in an array.
  *
  * @author luisramalho
  *
  */
-public final class L014MaxProductOfThree {
+public final class L4E1Distinct {
 
     /**
-     * L014MaxProductOfThree is non-instantiable.
+     * Private constructor.
      */
-    private L014MaxProductOfThree() {
+    private L4E1Distinct() {
 
     }
 
@@ -22,44 +22,33 @@ public final class L014MaxProductOfThree {
      *            Arguments.
      */
     public static void main(final String[] args) {
-        int[] a = { -3, 1, 2, -2, 5, 6 };
+        int[] a = { 2, 1, 1, 2, 3, 1 };
         System.out.println(solution(a));
     }
 
     /**
-     * Maximizes A[P] * A[Q] * A[R] for any triplet (P, Q, R).
+     * Computes the number of distinct values in an array.
      *
      * @param a
-     *            Non-empty zero-indexed array consisting of N integers. N is an
-     *            integer within the range [3..100,000]; each element of array A
-     *            is an integer within the range [−1,000..1,000].
-     * @return the value of the maximal product of any triplet.
+     *            zero-indexed array consisting of N integers. N is an integer
+     *            within the range [0..100,000]; each element is an integer
+     *            within the range [−1,000,000..1,000,000].
+     * @return number of distinct values in array a.
      */
     public static int solution(final int[] a) {
-        int size = a.length;
-
         // Merge sorts the array
-        mergeSort(a, 0, size - 1);
+        mergeSort(a, 0, a.length - 1);
 
-        /*
-         * The product of triplet (P, Q, R) equates to A[P] * A[Q] * A[R] (0 ≤ P
-         * < Q < R < N).
-         * 
-         * The product of two negatives will be a positive, so it's crucial to
-         * check if there are two negative with a product that is higher than
-         * the second and third to last numbers in the array.
-         */
-        int product = 0;
-        int last = size - 1;
-        int middle = size - 2;
-        int first = size - 3;
-        if (a[0] < 0 && a[1] < 0 && a[last] > 0) { // 2 negatives
-            product = Math.max(a[0] * a[1], a[first] * a[middle]) * a[last];
-        } else {
-            product = a[first] * a[middle] * a[last];
+        // Counts the elements that are unique
+        int count = 0;
+        int previous = Integer.MAX_VALUE;
+        for (int i = 0; i < a.length; i++) {
+            if (previous != a[i]) {
+                count++;
+            }
+            previous = a[i];
         }
-
-        return product;
+        return count;
     }
 
     /**

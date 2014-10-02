@@ -6,12 +6,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L001FrogJmp {
+public final class L1E1FrogJmp {
 
     /**
      * Private constructor.
      */
-    private L001FrogJmp() {
+    private L1E1FrogJmp() {
 
     }
 

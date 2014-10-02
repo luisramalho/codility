@@ -8,13 +8,13 @@ import java.util.Arrays;
  * @author luisramalho
  *
  */
-public final class L007MissingInteger {
+public final class L2E4MissingInteger {
 
     /**
      * Private constructor.
      */
 
-    private L007MissingInteger() {
+    private L2E4MissingInteger() {
     }
 
     /**

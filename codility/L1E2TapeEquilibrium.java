@@ -6,7 +6,7 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L002TapeEquilibrium {
+public final class L1E2TapeEquilibrium {
 
     /**
      * Test case(s).
@@ -16,7 +16,7 @@ public final class L002TapeEquilibrium {
     /**
      * Private constructor.
      */
-    private L002TapeEquilibrium() {
+    private L1E2TapeEquilibrium() {
 
     }
 

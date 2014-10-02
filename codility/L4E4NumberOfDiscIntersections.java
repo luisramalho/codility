@@ -7,12 +7,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L015NumberOfDiscIntersections {
+public final class L4E4NumberOfDiscIntersections {
 
     /**
      * L015NumberOfDiscIntersections is non-instantiable.
      */
-    private L015NumberOfDiscIntersections() {
+    private L4E4NumberOfDiscIntersections() {
 
     }
 

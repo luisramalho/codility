@@ -7,12 +7,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L006MaxCounters {
+public final class L2E3MaxCounters {
 
     /**
      * Private constructor.
      */
-    private L006MaxCounters() {
+    private L2E3MaxCounters() {
     }
 
     /**

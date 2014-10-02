@@ -1,17 +1,17 @@
 package codility;
 
 /**
- * Computes the number of distinct values in an array.
+ * Determines whether a triangle can be built from a given set of edges.
  *
  * @author luisramalho
  *
  */
-public final class L012Distinct {
+public final class L4E2Triangle {
 
     /**
-     * Private constructor.
+     * L013Triangle is non-instantiable.
      */
-    private L012Distinct() {
+    private L4E2Triangle() {
 
     }
 
@@ -22,33 +22,49 @@ public final class L012Distinct {
      *            Arguments.
      */
     public static void main(final String[] args) {
-        int[] a = { 2, 1, 1, 2, 3, 1 };
+        int[] a = { 10, 2, 5, 1, 8, 20 };
         System.out.println(solution(a));
     }
 
     /**
-     * Computes the number of distinct values in an array.
+     * A triplet (P, Q, R) is triangular if 0 ≤ P < Q < R < N.
      *
      * @param a
      *            zero-indexed array consisting of N integers. N is an integer
-     *            within the range [0..100,000]; each element is an integer
-     *            within the range [−1,000,000..1,000,000].
-     * @return number of distinct values in array a.
+     *            within the range [0..1,000,000]; each element of array A is an
+     *            integer within the range [−2,147,483,648..2,147,483,647].
+     * @return <code>1</code> if there exists a triangular triplet for this
+     *         array; <code>0</code> otherwise.
      */
     public static int solution(final int[] a) {
-        // Merge sorts the array
-        mergeSort(a, 0, a.length - 1);
+        int size = a.length;
 
-        // Counts the elements that are unique
-        int count = 0;
-        int previous = Integer.MAX_VALUE;
-        for (int i = 0; i < a.length; i++) {
-            if (previous != a[i]) {
-                count++;
-            }
-            previous = a[i];
+        if (size < 3) {
+            return 0;
         }
-        return count;
+
+        // Merge sorts the array
+        mergeSort(a, 0, size - 1);
+
+        /*
+         * A triplet (P, Q, R) is triangular if 0 ≤ P < Q < R < N and:
+         * 
+         * A[P] + A[Q] > A[R], A[Q] + A[R] > A[P], A[R] + A[P] > A[Q].
+         * 
+         * The conversion to long is done so that it prevents against integer
+         * overflow, since Integer.MAX_VALUE is the highest possible value of N.
+         */
+
+        for (int i = 0; i < size - 2; i++) {
+            long ap = a[i];
+            long aq = a[i + 1];
+            long ar = a[i + 2];
+            if (ap + aq > ar && aq + ar > ap && ar + ap > aq) {
+                return 1;
+            }
+        }
+
+        return 0;
     }
 
     /**

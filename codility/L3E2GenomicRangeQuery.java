@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author luisramalho
  *
  */
-public final class L009GenomicRangeQuery {
+public final class L3E2GenomicRangeQuery {
 
     /**
      * Number of nucleotides (A, C, G and T).
@@ -18,7 +18,7 @@ public final class L009GenomicRangeQuery {
     /**
      * Private constructor.
      */
-    private L009GenomicRangeQuery() {
+    private L3E2GenomicRangeQuery() {
 
     }
 
