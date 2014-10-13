@@ -7,12 +7,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L7E2MaxDoubleSliceSum {
+public final class L07E2MaxDoubleSliceSum {
 
     /**
      * L7E2MaxDoubleSliceSum is non-instantiable.
      */
-    private L7E2MaxDoubleSliceSum() {
+    private L07E2MaxDoubleSliceSum() {
 
     }
 

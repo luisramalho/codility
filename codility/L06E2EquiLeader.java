@@ -9,12 +9,12 @@ import java.util.Arrays;
  * @author luisramalho
  *
  */
-public final class L6E2EquiLeader {
+public final class L06E2EquiLeader {
 
     /**
      * L6E2EquiLeader is non-instantiable.
      */
-    private L6E2EquiLeader() {
+    private L06E2EquiLeader() {
 
     }
 

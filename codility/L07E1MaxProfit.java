@@ -6,12 +6,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L7E1MaxProfit {
+public final class L07E1MaxProfit {
 
     /**
      * L7E1MaxProfit is non-instantiable.
      */
-    private L7E1MaxProfit() {
+    private L07E1MaxProfit() {
 
     }
 

@@ -6,12 +6,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L3E1PassingCars {
+public final class L03E1PassingCars {
 
     /**
      * Private constructor.
      */
-    private L3E1PassingCars() {
+    private L03E1PassingCars() {
     }
 
     /**

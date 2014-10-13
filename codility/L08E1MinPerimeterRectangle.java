@@ -24,32 +24,29 @@
 package codility;
 
 /**
- * CountFactors.
+ * Find the minimal perimeter of any rectangle whose area equals N.
  *
  * @author luisramalho
  */
-public class L8E2CountFactors {
+public class L08E1MinPerimeterRectangle {
 
     /**
-     * Computes the number of factors.
+     * Computes the minimal perimeter of any rectangle whose area is exactly
+     * equal to n.
      *
-     * @param n positive integer; N is an integer within the range
-     * [1..2,147,483,647].
-     * @return the number of its factors.
+     * @param n integer representing the area of some rectangle. N is an integer
+     * within the range [1..1,000,000,000].
+     * @return the minimal perimeter of any rectangle whose area is exactly
+     * equal to n.
      */
     public int solution(int n) {
-        int i = 1;
-        int result = 0;
-        while (i < Math.sqrt(n)) {
+        int minPerimeter = Integer.MAX_VALUE;
+        for (int i = 1; i * i <= n; i++) {
             if (n % i == 0) {
-                result += 2;
+                minPerimeter = Math.min(minPerimeter, 2 * (i + (n / i)));
             }
-            i++;
         }
-        if (Math.pow(i, 2) == n) {
-            result += 1;
-        }
-        return result;
+        return minPerimeter;
     }
 
 }

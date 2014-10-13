@@ -24,32 +24,32 @@
 package codility;
 
 /**
- * Find the maximum sum of a compact subsequence of array elements.
- * 
+ * CountFactors.
+ *
  * @author luisramalho
  */
-public class L7E3MaxSliceSum {
-    
-    public L7E3MaxSliceSum() {}
-    
-    /**
-     * Finds the maximum sum of a compact subsequence of array elements.
-     * @param a non-empty zero-indexed array consisting of N integers is given.
-     * N is an integer within the range [1..1,000,000]; each element of array a 
-     * is an integer within the range [−1,000,000..1,000,000];
-     * @return  the maximum sum of any slice of a.
-     */
-    public int solution(int[] a) {
-        int n = a.length;
+public class L08E2CountFactors {
 
-        int maxEnding = a[0];
-        int maxSlice = maxEnding;
-        
-        for (int i = 1; i < n; i++) {
-            maxEnding = Math.max(a[i], maxEnding + a[i]);
-            maxSlice = Math.max(maxSlice, maxEnding);
+    /**
+     * Computes the number of factors.
+     *
+     * @param n positive integer; N is an integer within the range
+     * [1..2,147,483,647].
+     * @return the number of its factors.
+     */
+    public int solution(int n) {
+        int i = 1;
+        int result = 0;
+        while (i < Math.sqrt(n)) {
+            if (n % i == 0) {
+                result += 2;
+            }
+            i++;
         }
-        
-        return maxSlice;
+        if (Math.pow(i, 2) == n) {
+            result += 1;
+        }
+        return result;
     }
+
 }

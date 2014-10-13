@@ -7,12 +7,12 @@ package codility;
  *
  */
 
-public final class L1E3PermMissingElem {
+public final class L01E3PermMissingElem {
 
     /**
      * Private constructor.
      */
-    private L1E3PermMissingElem() {
+    private L01E3PermMissingElem() {
     }
 
     /**

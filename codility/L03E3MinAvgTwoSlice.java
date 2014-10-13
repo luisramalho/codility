@@ -6,12 +6,12 @@ package codility;
  * @author luisramalho
  *
  */
-public final class L3E3MinAvgTwoSlice {
+public final class L03E3MinAvgTwoSlice {
 
     /**
      * Private constructor.
      */
-    private L3E3MinAvgTwoSlice() {
+    private L03E3MinAvgTwoSlice() {
 
     }
 

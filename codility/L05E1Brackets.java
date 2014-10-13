@@ -8,12 +8,12 @@ import java.util.Stack;
  * @author luisramalho
  *
  */
-public final class L5E1Brackets {
+public final class L05E1Brackets {
 
     /**
      * L016Brackets is non-instantiable.
      */
-    private L5E1Brackets() {
+    private L05E1Brackets() {
 
     }
 

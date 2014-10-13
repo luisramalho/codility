@@ -9,7 +9,7 @@ import java.util.Set;
  * @author luisramalho
  *
  */
-public final class L2E2FrogRiverOne {
+public final class L02E2FrogRiverOne {
 
     /**
      * Position to which the frog wants to get.
@@ -24,7 +24,7 @@ public final class L2E2FrogRiverOne {
     /**
      * Private constructor.
      */
-    private L2E2FrogRiverOne() {
+    private L02E2FrogRiverOne() {
     }
 
     /**

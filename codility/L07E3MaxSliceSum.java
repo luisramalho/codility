@@ -24,29 +24,32 @@
 package codility;
 
 /**
- * Find the minimal perimeter of any rectangle whose area equals N.
- *
+ * Find the maximum sum of a compact subsequence of array elements.
+ * 
  * @author luisramalho
  */
-public class L8E1MinPerimeterRectangle {
-
+public class L07E3MaxSliceSum {
+    
+    public L07E3MaxSliceSum() {}
+    
     /**
-     * Computes the minimal perimeter of any rectangle whose area is exactly
-     * equal to n.
-     *
-     * @param n integer representing the area of some rectangle. N is an integer
-     * within the range [1..1,000,000,000].
-     * @return the minimal perimeter of any rectangle whose area is exactly
-     * equal to n.
+     * Finds the maximum sum of a compact subsequence of array elements.
+     * @param a non-empty zero-indexed array consisting of N integers is given.
+     * N is an integer within the range [1..1,000,000]; each element of array a 
+     * is an integer within the range [−1,000,000..1,000,000];
+     * @return  the maximum sum of any slice of a.
      */
-    public int solution(int n) {
-        int minPerimeter = Integer.MAX_VALUE;
-        for (int i = 1; i * i <= n; i++) {
-            if (n % i == 0) {
-                minPerimeter = Math.min(minPerimeter, 2 * (i + (n / i)));
-            }
-        }
-        return minPerimeter;
-    }
+    public int solution(int[] a) {
+        int n = a.length;
 
+        int maxEnding = a[0];
+        int maxSlice = maxEnding;
+        
+        for (int i = 1; i < n; i++) {
+            maxEnding = Math.max(a[i], maxEnding + a[i]);
+            maxSlice = Math.max(maxSlice, maxEnding);
+        }
+        
+        return maxSlice;
+    }
 }

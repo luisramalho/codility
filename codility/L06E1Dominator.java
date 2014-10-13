@@ -9,12 +9,12 @@ import java.util.Arrays;
  * @author luisramalho
  *
  */
-public final class L6E1Dominator {
+public final class L06E1Dominator {
 
     /**
      * L6E1Dominator is non-instantiable.
      */
-    private L6E1Dominator() {
+    private L06E1Dominator() {
 
     }
 
