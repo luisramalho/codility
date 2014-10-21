@@ -30,6 +30,13 @@ package codility;
  */
 public class L99E1TreeHeight {
 
+    class Tree {
+
+        int x;
+        Tree l;
+        Tree r;
+    }
+
     /**
      * Returns the height of a tree according to the convention that a tree
      * consisting only of just one node has height 0.
